@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
-import watermarkImg from '../assets/watermark.png';
+
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -48,7 +48,7 @@ export const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative w-screen h-screen overflow-hidden bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black cursor-none">
+    <section className="relative w-full min-h-[760px] h-svh overflow-hidden bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black cursor-none">
       {/* ================= 1. MINIMAL CUSTOM CURSOR ================= */}
       {cursorPos.x >= 0 && (
         <motion.div
@@ -96,11 +96,7 @@ export const HeroSection: React.FC = () => {
               }}
               className="relative flex items-center justify-center"
             >
-              <img
-                src={watermarkImg}
-                alt="Insignia"
-                className="w-28 h-28 lg:w-32 lg:h-32 object-contain drop-shadow-[0_0_15px_rgba(212,175,55,0.25)]"
-              />
+              <span className="text-5xl text-[#D4AF37] font-serif" aria-label="Rajeev Sharma">RS</span>
             </motion.div>
           </div>
         </div>
@@ -118,7 +114,7 @@ export const HeroSection: React.FC = () => {
             className="text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            LOHITHA.
+            RAJEEV.
           </a>
 
           {/* Navigation Links */}
@@ -173,7 +169,7 @@ export const HeroSection: React.FC = () => {
               >
                 {/* Line 1: I BUILD */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)]">
-                  I BUILD
+                  I GROW
                 </span>
 
                 {/* Line 2: DIGITAL */}
@@ -183,7 +179,7 @@ export const HeroSection: React.FC = () => {
 
                 {/* Line 3: EXPERIENCES */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#DFBE8A] via-[#9B7640] to-[#342410] drop-shadow-[0_10px_30px_rgba(155,118,64,0.4)]">
-                  EXPERIENCES
+                  BRANDS
                 </span>
               </h1>
             </motion.div>
@@ -194,7 +190,7 @@ export const HeroSection: React.FC = () => {
                 className="text-[10px] sm:text-[11px] md:text-xs font-normal tracking-[0.28em] uppercase text-[#C4B29E]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                FULL STACK DEVELOPER <span className="text-[#8C6D4F] mx-1">•</span> UI/UX DESIGNER <span className="text-[#8C6D4F] mx-1">•</span> DATA SCIENCE
+                Rajeev Sharma — E-commerce &amp; Digital Marketing Professional
               </p>
             </motion.div>
 
@@ -205,16 +201,16 @@ export const HeroSection: React.FC = () => {
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               <p>
-                I turn bold ideas into seamless digital experiences.
+                I help brands build their online presence and reach more customers.
                 <br />
-                Where frontend meets powerful backend, and code transforms vision into impact.
+                From WordPress stores and marketplace listings to SEO, content and paid campaigns.
               </p>
             </motion.div>
 
             {/* CTA Buttons */}
             <motion.div
               variants={fadeUpVariants}
-              className="flex flex-row items-center gap-4 sm:gap-6"
+              className="flex flex-wrap items-center gap-4 sm:gap-6"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               {/* Explore My Work CTA */}
@@ -235,6 +231,7 @@ export const HeroSection: React.FC = () => {
               {/* Download Resume Button */}
               <motion.a
                 href="/resume.pdf"
+                download="Rajeev-Sharma-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => setIsHovered(true)}
@@ -267,7 +264,7 @@ export const HeroSection: React.FC = () => {
               className="text-[9.5px] font-medium tracking-[0.24em] uppercase text-[#E0D3C5] space-y-1 mb-3"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              <p>CODE IS MY CRAFT.</p>
+              <p>STRATEGY IS MY CRAFT.</p>
               <p>IMPACT IS MY GOAL.</p>
             </div>
 
@@ -282,7 +279,7 @@ export const HeroSection: React.FC = () => {
                 letterSpacing: '0.04em',
               }}
             >
-              Lohitha
+              Rajeev Sharma
             </div>
           </motion.div>
         </div>

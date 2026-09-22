@@ -4,37 +4,59 @@ import type { Variants } from 'framer-motion';
 
 const bentoCategories = [
   {
-    title: 'FRONTEND ARCHITECTURE',
-    badge: 'CORE PILLAR',
-    items: ['React.js', 'React Native', 'Tailwind CSS', 'Electron.js'],
-    description: 'Specialized in building high-performance client applications, custom component libraries, and immersive desktop/mobile interfaces.',
-    stat: '100% RESPONSIVE',
-    colSpan: 'lg:col-span-7',
+    "title": "E-COMMERCE & MARKETPLACES",
+    "badge": "SELLER OPERATIONS",
+    "items": [
+      "Amazon Seller Central",
+      "Flipkart Seller Hub",
+      "WordPress",
+      "Google Merchant Center"
+    ],
+    "description": "Product listings, website updates and marketplace operations that support a consistent online shopping experience.",
+    "stat": "STORES & LISTINGS",
+    "colSpan": "lg:col-span-7"
   },
   {
-    title: 'DISTRIBUTED BACKEND',
-    badge: 'HIGH CONCURRENCY',
-    items: ['Node.js', 'Express.js', 'Spring Boot', 'Docker', 'Redis'],
-    description: 'Engineered RESTful APIs, JWT role-based access control, caching layers, and multi-tenant SaaS backend isolation.',
-    stat: '< 40ms LATENCY',
-    colSpan: 'lg:col-span-5',
+    "title": "SEO & DISCOVERY",
+    "badge": "ORGANIC VISIBILITY",
+    "items": [
+      "SEO",
+      "Keyword Research",
+      "Google Search Console",
+      "Google Business Profile"
+    ],
+    "description": "Search-focused website content, blog optimization and local business visibility.",
+    "stat": "SEARCH & LOCAL",
+    "colSpan": "lg:col-span-5"
   },
   {
-    title: 'DATA PLATFORMS',
-    badge: 'PERSISTENCE',
-    items: ['MongoDB Atlas', 'PostgreSQL', 'MySQL'],
-    description: 'Designing resilient relational and document schemas with optimized indexing and transaction isolation.',
-    stat: 'ACID & NOSQL',
-    colSpan: 'lg:col-span-5',
+    "title": "PAID MEDIA & ANALYTICS",
+    "badge": "CAMPAIGN EXECUTION",
+    "items": [
+      "Meta Ads",
+      "Meta Pixel",
+      "Google Analytics",
+      "Microsoft Excel"
+    ],
+    "description": "Facebook and Instagram campaigns, tracking implementation and performance reporting.",
+    "stat": "ADS & MEASUREMENT",
+    "colSpan": "lg:col-span-5"
   },
   {
-    title: 'ALGORITHMS & MACHINE LEARNING',
-    badge: 'INTELLIGENCE',
-    items: ['C++', 'Python', 'Java', 'scikit-learn', 'OpenAI API'],
-    description: '1200+ algorithm problems solved. Applied Random Forest classifiers for real-time risk heatmaps and NLP policy analyzers.',
-    stat: '1200+ SOLVED',
-    colSpan: 'lg:col-span-7',
-  },
+    "title": "CONTENT & COMMUNICATION",
+    "badge": "BRAND PRESENCE",
+    "items": [
+      "Canva",
+      "Social Media Management",
+      "Video Editing",
+      "Mailchimp",
+      "Email Marketing",
+      "Teamwork"
+    ],
+    "description": "Social content, product banners, Instagram and YouTube videos, and email campaigns that communicate a brand clearly.",
+    "stat": "CONTENT & EMAIL",
+    "colSpan": "lg:col-span-7"
+  }
 ];
 
 const containerVariants: Variants = {
@@ -87,7 +109,7 @@ export const SkillsSection: React.FC = () => {
             className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#D4AF37]"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            03 / TECH MATRIX
+            03 / SKILLS & TOOLS
           </span>
           <div className="w-20 h-[1px] bg-gradient-to-r from-[#D4AF37]/80 via-[#8C6D4F]/40 to-transparent" />
         </motion.div>
@@ -105,10 +127,10 @@ export const SkillsSection: React.FC = () => {
             style={{ fontFamily: "'Bebas Neue', sans-serif" }}
           >
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
-              ARCHITECTURAL MASTERY.
+              THE RIGHT TOOLS.
             </span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-              PRECISION APPLIED.
+              PURPOSEFUL EXECUTION.
             </span>
           </h2>
         </motion.div>

@@ -7,107 +7,122 @@ interface Project {
   title: string;
   category: string;
   description: string;
-  githubUrl: string;
+  contactUrl: string;
   tech: string[];
   metrics: { label: string; value: string }[];
 }
 
 const projects: Project[] = [
   {
-    number: '01',
-    title: 'PolicyGuard AI',
-    category: 'AI / LEGAL-TECH PLATFORM',
-    description:
-      'AI-powered platform engineered for automated privacy policy analysis and legal contract auditing across web, desktop, and mobile. Implements NLP extraction, real-time risk alert detection, and generative risk score intelligence.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
-    tech: [
-      'React.js',
-      'React Native',
-      'Electron.js',
-      'Node.js',
-      'Express.js',
-      'MongoDB Atlas',
-      'OpenAI API',
-      'Prompt Eng',
-      'NLP',
-      'Docker',
-      'JWT',
+    "number": "01",
+    "title": "Horizontal Eight",
+    "category": "FURNITURE / E-COMMERCE",
+    "description": "Revamped a WordPress furniture store, maintained product listings and banners, and improved blog visibility through keyword research and SEO. Managed Instagram content, Amazon listings and ad campaigns, supporting 100+ Amazon orders across India over a five-month period documented in my resume.",
+    "contactUrl": "#contact",
+    "tech": [
+      "WordPress",
+      "Amazon Seller Central",
+      "SEO",
+      "Canva",
+      "Instagram"
     ],
-    metrics: [
-      { label: 'PLATFORMS', value: 'Web, Mobile, Desktop' },
-      { label: 'ENGINE', value: 'OpenAI NLP / GPT' },
-      { label: 'PIPELINE', value: 'Automated Scoring' },
-    ],
+    "metrics": [
+      {
+        "label": "CHANNELS",
+        "value": "Website + Amazon"
+      },
+      {
+        "label": "DELIVERED",
+        "value": "100+ Amazon orders"
+      },
+      {
+        "label": "FOCUS",
+        "value": "Visibility & sales"
+      }
+    ]
   },
   {
-    number: '02',
-    title: 'Software Release Risk Heatmap',
-    category: 'MACHINE LEARNING / DEV PLATFORM',
-    description:
-      'Full-stack predictive release management platform utilizing Machine Learning. Implements a trained Random Forest classifier to categorize release stability from Low to Critical risk, rendered over a live interactive team heatmap.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
-    tech: [
-      'React.js',
-      'TypeScript',
-      'Python',
-      'FastAPI',
-      'scikit-learn',
-      'PostgreSQL',
-      'Tailwind CSS',
-      'REST APIs',
-      'JWT',
+    "number": "02",
+    "title": "The Little Box",
+    "category": "STARTUP / PAID SOCIAL",
+    "description": "Built an e-commerce platform with email order integration and Meta Pixel tracking. Launched Facebook and Instagram campaigns through Meta Ads Manager, achieving the first sale within 10 days of campaign initiation.",
+    "contactUrl": "#contact",
+    "tech": [
+      "E-commerce",
+      "Meta Ads Manager",
+      "Meta Pixel",
+      "Facebook",
+      "Instagram"
     ],
-    metrics: [
-      { label: 'MODEL', value: 'Random Forest' },
-      { label: 'ACCURACY', value: 'High Precision' },
-      { label: 'DASHBOARD', value: 'Live Risk Heatmap' },
-    ],
+    "metrics": [
+      {
+        "label": "FIRST SALE",
+        "value": "Within 10 days"
+      },
+      {
+        "label": "TRACKING",
+        "value": "Meta Pixel"
+      },
+      {
+        "label": "CAMPAIGNS",
+        "value": "Facebook + Instagram"
+      }
+    ]
   },
   {
-    number: '03',
-    title: 'Multi-Tenant SaaS Platform',
-    category: 'CLOUD / DISTRIBUTED SYSTEM',
-    description:
-      'Enterprise-grade multi-tenant platform built for unified management of teams, projects, and execution lifecycles. Architected with strict tenant data isolation, granular Role-Based Access Control (RBAC), and containerized deployments.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
-    tech: [
-      'Node.js',
-      'Express.js',
-      'PostgreSQL',
-      'React',
-      'Docker',
-      'JWT',
-      'RBAC',
-      'REST APIs',
+    "number": "03",
+    "title": "Super Fresh Mall",
+    "category": "STARTUP / DIGITAL STOREFRONT",
+    "description": "Developed a WordPress e-commerce website from scratch. Established and optimized the Google Business Profile for local visibility and managed social media strategy and Instagram content creation.",
+    "contactUrl": "#contact",
+    "tech": [
+      "WordPress",
+      "E-commerce",
+      "Google Business Profile",
+      "Social Media",
+      "Content Creation"
     ],
-    metrics: [
-      { label: 'ARCHITECTURE', value: 'Multi-Tenant' },
-      { label: 'SECURITY', value: 'RBAC Isolation' },
-      { label: 'CONTAINERS', value: 'Docker Compose' },
-    ],
+    "metrics": [
+      {
+        "label": "WEBSITE",
+        "value": "Built from scratch"
+      },
+      {
+        "label": "SEARCH",
+        "value": "Local visibility"
+      },
+      {
+        "label": "CONTENT",
+        "value": "Instagram"
+      }
+    ]
   },
   {
-    number: '04',
-    title: 'Payment Gateway with Hosted Checkout',
-    category: 'FINTECH / PAYMENT SYSTEMS',
-    description:
-      'End-to-end hosted payment gateway infrastructure supporting seamless merchant order generation, multi-currency processing, and secure consumer checkout via UPI and Cards with webhook transaction verification.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
-    tech: [
-      'Node.js',
-      'Spring Boot',
-      'PostgreSQL',
-      'React',
-      'Docker',
-      'REST APIs',
-      'UPI / Card Integrations',
+    "number": "04",
+    "title": "Lokvastu",
+    "category": "WEBSITE / SEARCH VISIBILITY",
+    "description": "Developed the Lokvastu WordPress website during my role at Arihant Brothers Limited. Applied SEO to improve organic discoverability and worked on Google Business Profile visibility.",
+    "contactUrl": "#contact",
+    "tech": [
+      "WordPress",
+      "SEO",
+      "Google Business Profile"
     ],
-    metrics: [
-      { label: 'PROTOCOLS', value: 'UPI & Cards' },
-      { label: 'BACKEND', value: 'Spring Boot + Node' },
-      { label: 'DATABASE', value: 'ACID PostgreSQL' },
-    ],
-  },
+    "metrics": [
+      {
+        "label": "BUSINESS",
+        "value": "Arihant Brothers"
+      },
+      {
+        "label": "WEBSITE",
+        "value": "WordPress"
+      },
+      {
+        "label": "FOCUS",
+        "value": "Organic visibility"
+      }
+    ]
+  }
 ];
 
 export const ProjectsSection: React.FC = () => {
@@ -155,7 +170,7 @@ export const ProjectsSection: React.FC = () => {
               SELECTED WORKS.
             </span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-              ENGINEERED VALUE.
+              MARKETING IN ACTION.
             </span>
           </h2>
 
@@ -163,7 +178,7 @@ export const ProjectsSection: React.FC = () => {
             className="text-xs sm:text-sm font-light text-[#A8988B] max-w-sm mt-4 md:mt-0 leading-relaxed"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            Scroll down to unfold the system architecture cards. Each platform was built to solve complex operational challenges.
+            A selection of website, marketplace and campaign projects from my professional experience.
           </p>
         </motion.div>
 
@@ -247,7 +262,7 @@ export const ProjectsSection: React.FC = () => {
                   <div className="lg:col-span-5 flex flex-col justify-between h-full space-y-6 lg:pl-6 lg:border-l lg:border-[#8C6D4F]/25">
                     <div className="space-y-3">
                       <span className="text-[9.5px] font-mono tracking-[0.25em] uppercase text-[#8C6D4F] block mb-2">
-                        // ARCHITECTURE METRICS
+                        // PROJECT HIGHLIGHTS
                       </span>
                       {project.metrics.map((m) => (
                         <div
@@ -265,13 +280,13 @@ export const ProjectsSection: React.FC = () => {
                     </div>
 
                     <a
-                      href={project.githubUrl}
-                      target="_blank"
+                      href={project.contactUrl}
+
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center space-x-3 px-6 py-3.5 border border-[#8C6D4F] bg-[#16120E] hover:border-[#D4AF37] hover:bg-[#D4AF37] text-[#EAD8C7] hover:text-black text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.1)]"
                       style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >
-                      <span>VIEW ON GITHUB</span>
+                      <span>DISCUSS THIS PROJECT</span>
                       <span className="text-xs">↗</span>
                     </a>
                   </div>

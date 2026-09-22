@@ -1,16 +1,8 @@
 // src/components/ContactSection.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 export const ContactSection: React.FC = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [sent, setSent] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSent(true);
-  };
-
   return (
     <footer
       id="contact"
@@ -54,10 +46,10 @@ export const ContactSection: React.FC = () => {
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
                   <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
-                    INITIALIZE
+                    LET’S START
                   </span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-                    TRANSMISSION.
+                    A CONVERSATION.
                   </span>
                 </h2>
               </motion.div>
@@ -66,7 +58,7 @@ export const ContactSection: React.FC = () => {
                 className="text-xs sm:text-[13px] font-light text-[#A8988B] leading-relaxed max-w-md"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Have an ambitious system to architect, an engineering opportunity, or a collaborative inquiry? Send a direct dispatch below.
+                Need help with an online store, marketplace listings, SEO or a marketing campaign? Let’s talk about your next project.
               </p>
             </div>
           </div>
@@ -88,78 +80,13 @@ export const ContactSection: React.FC = () => {
             <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-[#D4AF37]/60" />
             <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-[#D4AF37]/60" />
 
-            {sent ? (
-              <div className="py-16 text-center space-y-4">
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-[#D4AF37] text-[#D4AF37] text-sm">
-                  ✓
-                </div>
-                <h3 className="text-3xl text-white font-normal uppercase" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-                  PACKET DELIVERED
-                </h3>
-                <p className="text-xs text-[#A8988B] font-light" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                  Transmission registered successfully.
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
-                      // SENDER
-                    </span>
-                    <input
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="Enter name"
-                      className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 px-4 py-3 outline-none rounded-sm transition-colors"
-                      style={{ fontFamily: "'Montserrat', sans-serif" }}
-                    />
-                  </div>
-
-                  <div>
-                    <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
-                      // CHANNEL
-                    </span>
-                    <input
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="Enter email"
-                      className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 px-4 py-3 outline-none rounded-sm transition-colors"
-                      style={{ fontFamily: "'Montserrat', sans-serif" }}
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
-                    // PAYLOAD
-                  </span>
-                  <textarea
-                    required
-                    rows={4}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Enter transmission payload..."
-                    className="w-full bg-[#120F0C] border border-[#8C6D4F]/30 focus:border-[#D4AF37] text-xs text-white placeholder-[#8C6D4F]/50 p-4 outline-none rounded-sm transition-colors resize-none"
-                    style={{ fontFamily: "'Montserrat', sans-serif" }}
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full py-3.5 border border-[#8C6D4F]/50 bg-[#14100D] hover:border-[#D4AF37] hover:bg-[#1A1510] text-[#E8DFD8] hover:text-[#F7E7C4] text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
-                  style={{ fontFamily: "'Montserrat', sans-serif" }}
-                >
-                  EXECUTE DISPATCH ↗
-                </button>
-
-              </form>
-            )}
+            <div className="space-y-7" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+              <p className="text-xs tracking-[0.2em] uppercase text-[#D4AF37]">Get in touch</p>
+              <a href="mailto:rajeevsrma423@gmail.com" className="block text-lg sm:text-2xl text-[#F7E7C4] break-words hover:text-white">rajeevsrma423@gmail.com ↗</a>
+              <a href="tel:+918825113864" className="block text-lg text-[#E8DFD8] hover:text-white">+91 88251 13864</a>
+              <a href="https://www.linkedin.com/in/rajeevsrma/" target="_blank" rel="noopener noreferrer" className="inline-block border border-[#8C6D4F] px-6 py-3 text-sm text-[#E8DFD8] hover:border-[#D4AF37]">Connect on LinkedIn ↗</a>
+              <p className="text-xs text-[#A8988B] leading-relaxed">For work opportunities, e-commerce projects and digital marketing collaborations.</p>
+            </div>
           </motion.div>
 
         </div>
@@ -167,10 +94,10 @@ export const ContactSection: React.FC = () => {
         {/* System Footer Line */}
         <div className="pt-16 mt-16 border-t border-[#8C6D4F]/15 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
           <span className="text-[10px] font-mono tracking-widest text-[#8C6D4F] uppercase">
-            PORTFOLIO // EDITION 2026
+            RAJEEV SHARMA // PORTFOLIO
           </span>
           <span className="text-[10px] font-mono text-[#8C6D4F]">
-            © {new Date().getFullYear()} • ENGINEERED WITH PRECISION
+            © {new Date().getFullYear()} • Rajeev Sharma
           </span>
         </div>
 
